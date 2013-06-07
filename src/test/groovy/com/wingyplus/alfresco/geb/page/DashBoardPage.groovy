@@ -15,6 +15,20 @@ class DashBoardPage extends Page {
             $('button[id$=user-button]').click()
             $('a[id$=logout]').click()
         }
+
+        /*
+         * @return more component
+         */
+        clickMore {
+            $('button[id$=app_more-button]').click()
+        }
+
+        /*
+         * @return users link component
+         */
+        clickUsers {
+            $('a[id$=users]').click()
+        }
     }
 
 }
