@@ -6,7 +6,7 @@ class AlfrescoHeaderModule extends Module {
 
     static content = {
         dashboard {
-            $('a[id$=app_my-dashboard-button').click()
+            $('a', id: endsWith('app_my-dashboard-button')).click()
         }
 
         username { module AlfrescoUserButtonModule }

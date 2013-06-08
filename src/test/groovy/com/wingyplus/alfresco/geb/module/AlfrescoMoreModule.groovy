@@ -6,8 +6,8 @@ class AlfrescoMoreModule extends Module {
 
      static content = {
          users {
-             $('button[id$=app_more-button]').click()
-             $('a[id$=users]').click()
+             $('button', id: endsWith('app_more-button')).click()
+             $('a', id: endsWith('users')).click()
          }
      }
 }

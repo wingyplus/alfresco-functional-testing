@@ -12,9 +12,9 @@ class LoginPage extends Page {
     static at = { waitFor {  title == 'Alfresco » Login' } }
 
     static content = {
-        username { username -> $('input[id$=username]').value(username) }
-        password { password -> $('input[id$=password]').value(password) }
-        login { $('button[id$=submit-button]').click() }
+        username { username -> $('input', id: endsWith('username')).value(username) }
+        password { password -> $('input', id: endsWith('password')).value(password) }
+        login { $('button', id: endsWith('submit-button')).click() }
         error { $('div.error').text() }
     }
 

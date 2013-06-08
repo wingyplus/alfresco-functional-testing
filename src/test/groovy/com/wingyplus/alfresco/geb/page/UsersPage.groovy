@@ -12,4 +12,8 @@ class UsersPage extends Page {
         }
     }
 
+    static content = {
+        newUser { $('button', id: endsWith('newuser-button-button')).click() }
+    }
+
 }

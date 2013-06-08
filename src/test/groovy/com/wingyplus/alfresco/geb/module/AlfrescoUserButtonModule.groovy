@@ -5,8 +5,8 @@ import geb.Module;
 class AlfrescoUserButtonModule extends Module {
     static content = {
         logout {
-            $('button[id$=user_user-button]').click()
-            $('a[id$=logout]').click()
+            $('button', id: endsWith('user_user-button')).click()
+            $('a', id: endsWith('logout')).click()
         }
     }
 }
