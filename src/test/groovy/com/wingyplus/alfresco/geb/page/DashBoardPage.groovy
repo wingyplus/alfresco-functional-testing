@@ -1,5 +1,7 @@
 package com.wingyplus.alfresco.geb.page
 
+import com.wingyplus.alfresco.geb.module.AlfrescoHeaderModule;
+
 import geb.Page;
 
 /*
@@ -11,10 +13,8 @@ class DashBoardPage extends Page {
 
     static content = {
         header { $('div.title > h1 > span').text() }
-        logout {
-            $('button[id$=user-button]').click()
-            $('a[id$=logout]').click()
-        }
+        alfrescoHeader { module AlfrescoHeaderModule }
+
 
         /*
          * @return more component

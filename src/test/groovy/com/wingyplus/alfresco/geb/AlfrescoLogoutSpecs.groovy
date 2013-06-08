@@ -1,5 +1,6 @@
 package com.wingyplus.alfresco.geb
 
+import com.wingyplus.alfresco.geb.module.AlfrescoHeaderModule;
 import com.wingyplus.alfresco.geb.page.DashBoardPage;
 import com.wingyplus.alfresco.geb.page.LoginPage;
 
@@ -23,7 +24,7 @@ class AlfrescoLogoutSpecs extends GebSpec {
         at DashBoardPage
 
         when:
-        logout
+        alfrescoHeader.username.logout
 
         then:
         at LoginPage
