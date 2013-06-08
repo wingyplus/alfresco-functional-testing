@@ -14,21 +14,6 @@ class DashBoardPage extends Page {
     static content = {
         header { $('div.title > h1 > span').text() }
         alfrescoHeader { module AlfrescoHeaderModule }
-
-
-        /*
-         * @return more component
-         */
-        clickMore {
-            $('button[id$=app_more-button]').click()
-        }
-
-        /*
-         * @return users link component
-         */
-        clickUsers {
-            $('a[id$=users]').click()
-        }
     }
 
 }

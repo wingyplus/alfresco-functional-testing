@@ -10,6 +10,7 @@ class AlfrescoHeaderModule extends Module {
         }
 
         username { module AlfrescoUserButtonModule }
+        more { module AlfrescoMoreModule }
     }
 
 }

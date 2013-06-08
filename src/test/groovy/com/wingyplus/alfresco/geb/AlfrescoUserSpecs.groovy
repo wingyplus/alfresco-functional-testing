@@ -19,9 +19,8 @@ class AlfrescoUserSpecs extends GebSpec {
         given:
         at DashBoardPage
 
-        when: 'simulate action'
-        clickMore
-        clickUsers
+        when: 'click follow action'
+        alfrescoHeader.more.users
 
         then:
         at UsersPage
